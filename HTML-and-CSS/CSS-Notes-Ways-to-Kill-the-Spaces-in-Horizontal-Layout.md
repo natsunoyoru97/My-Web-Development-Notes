@@ -84,7 +84,7 @@ You can use the float property instead of using inline-block, but you cannot exp
 
 ### 5. Minimized HTML
 
- ```CSS
+ ```html
 	<ul>
 		<li>
 		one</li><li>
@@ -94,7 +94,7 @@ You can use the float property instead of using inline-block, but you cannot exp
 
 or
 
-```CSS
+```html
 	<ul>
 		<li>one</li
 		><li>two</li
@@ -104,7 +104,7 @@ or
 
 or with comments:
 
-```CSS
+```html
 	<ul>
 		<li>one</li><!--
 		--><li>two</li><!--
@@ -117,7 +117,7 @@ It is quite messy and hard to maintain although it does the trick. I am not a bi
 
 ### 6. Skip the Closing Tag
 
-```CSS
+```html
 	<ul>
 		<li>one
 		<li>two
