@@ -12,7 +12,7 @@ Note that many of these methods is using the ``inline-block`` property, which is
 
  ```CSS
      .navbar ul {
-	 /*set the font-size to 0*/
+	     /*set the font-size to 0*/
          font-size: 0;
      }
      .navbar li {
