@@ -6,7 +6,7 @@ The notes also update in my personal tech blog: natsunoyoru97.github.io/main
 # Contents
 
 ## HTML & CSS
-* [CSS Notes: Ways to Kill Spaces in Horizontal Layout](/HTML & CSS/CSS Notes Ways to Kill the Spaces in Horizontal Layout.md)
+* [CSS Notes: Ways to Kill Spaces in Horizontal Layout](/HTML & CSS/CSS Notes: Ways to Kill the Spaces in Horizontal Layout.md)
 
 ## Javascript
 
