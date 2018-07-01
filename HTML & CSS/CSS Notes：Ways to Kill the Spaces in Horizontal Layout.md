@@ -1,7 +1,5 @@
 # CSS Notes：Ways to Kill the Spaces in Horizontal Layout
 
-@(HTML&CSS)
-
 ***
 There are many ways to kill the spaces. Some funky ways like minimized HTML and skipping the closing tag will also be mentioned.
 
@@ -10,12 +8,12 @@ Note that many of these methods is using the ``inline-block`` property, which is
 ### 1. Set the Font Size to Zero
  * Setting a ``font-size`` of 0 on the container itself (thus causing a blank space character to have zero width), and then resetting the size on the items.
  
-	.navbar ul {
-		/*set the font-size to 0*/
+     .navbar ul {
+         /*set the font-size to 0*/
          font-size: 0;
      }
      .navbar li {
-	     /*reset the font-size*/
+         /*reset the font-size*/
          font-size: 16px;
          font-size: 1rem;
      }
@@ -32,8 +30,8 @@ Note that many of these methods is using the ``inline-block`` property, which is
 Setting negative margin is also useful to scoot the elements back. The font-size property may need to be adjusted based on font size of parent.
 
 	nav a {
-		display: inline-block;
-		margin-right: -4px;
+	    display: inline-block;
+	    margin-right: -4px;
 	}
 
 #### 2.1 Drawbacks
@@ -53,20 +51,20 @@ Using [a tiny custom font](https://matthewlein.com/articles/inline-block-fix), o
 It works with any em-based elements, and does not rely on size assumptions.
 
 	nav ul {
-		/*clear the font-family property*/
-		font-family: empty;
-		margin: 0;
-		padding: 0;
-		text-align: center;
+	    /*clear the font-family property*/
+	    font-family: empty;
+	    margin: 0;
+	    padding: 0;
+	    text-align: center;
 	}
 	nav li {
-		/*reset the font-family property*/
-		font-family: serif;
-		display: inline-block;
-		background-color: #CCC;
-		vertical-align: top;
-		/*fix the display problem in Firefox*/
-		padding: 0 1px;
+	    /*reset the font-family property*/
+	    font-family: serif;
+	    display: inline-block;
+	    background-color: #CCC;
+	    vertical-align: top;
+	    /*fix the display problem in Firefox*/
+	    padding: 0 1px;
 	}
 
 #### 3.1 Drawbacks
@@ -80,24 +78,24 @@ You can use the float property instead of using inline-block, but you cannot exp
 ### 5. Minimized HTML
 
 	<ul>
-		<li>
-		one</li><li>
-		two</li><li>
-		three</li>
+	    <li>
+	    one</li><li>
+	    two</li><li>
+	    three</li>
 	</ul>
 or
 
 	<ul>
-		<li>one</li
-		><li>two</li
-		><li>three</li>
+	    <li>one</li
+	    ><li>two</li
+	    ><li>three</li>
 	</ul>
 or with comments:
 
 	<ul>
-		<li>one</li><!--
-		--><li>two</li><!--
-		--><li>three</li>
+	    <li>one</li><!--
+	    --><li>two</li><!--
+	    --><li>three</li>
 	</ul>
 
 It is quite messy and hard to maintain although it does the trick. I am not a big fun of this technique anyway \\( ツ)/
@@ -105,19 +103,19 @@ It is quite messy and hard to maintain although it does the trick. I am not a bi
 ### 6. Skip the Closing Tag
 
 	<ul>
-		<li>one
-		<li>two
-		<li>three
+	    <li>one
+	    <li>two
+	    <li>three
 	</ul>
 
 ### 5. Flexbox
 
 	ul {
-		display: -webkit-box;/* OLD - iOS 6-, Safari 3.1-6 */
-		display: -moz-box; /* OLD - Firefox 19- (buggy but mostly works) */
-		display: -ms-flexbox; /* TWEENER - IE 10 */
-		display: -webkit-flex; /* NEW - Chrome */
-		display: flex; /* NEW, Spec - Opera 12.1, Firefox 20+ */
+	    display: -webkit-box;/* OLD - iOS 6-, Safari 3.1-6 */
+	    display: -moz-box; /* OLD - Firefox 19- (buggy but mostly works) */
+	    display: -ms-flexbox; /* TWEENER - IE 10 */
+	    display: -webkit-flex; /* NEW - Chrome */
+	    display: flex; /* NEW, Spec - Opera 12.1, Firefox 20+ */
 	}
 
 #### 5.1 Drawback
